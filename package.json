@@ -11,6 +11,7 @@
     "url": "https://github.com/JedWatson/react-input-autosize.git"
   },
   "dependencies": {
+    "babel-preset-env": "^1.6.1",
     "prop-types": "^15.5.8"
   },
   "devDependencies": {
@@ -54,7 +55,7 @@
     "react": "^0.14.9 || ^15.3.0 || ^16.0.0-rc || ^16.0"
   },
   "scripts": {
-    "build": "NODE_ENV=production nps build",
+    "build": "nps build",
     "build:examples": "nps examples",
     "deploy": "nps examples && gh-pages -d examples/dist",
     "lint": "eslint ./; true",
