@@ -14,11 +14,8 @@ const globals = {
 const external = Object.keys(globals);
 const babelOptions = production => {
 	let result = {
-		babelrc: false,
-		presets: [['env', { modules: false }], 'stage-2', 'react'],
 		exclude: 'node_modules/**',
 		plugins: ['external-helpers'],
-		externalHelpers: true,
 	};
 	return result;
 };
