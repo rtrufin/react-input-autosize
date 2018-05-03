@@ -18,9 +18,6 @@ const babelOptions = production => {
 		presets: [['es2015', { modules: false }], 'stage-2', 'react'],
 		plugins: ['external-helpers'],
 	};
-	if (production) {
-		result.plugins.push('transform-react-remove-prop-types');
-	}
 	return result;
 };
 
